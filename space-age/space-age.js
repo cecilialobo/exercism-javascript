@@ -1,8 +1,8 @@
-//
-// This is only a SKELETON file for the 'Space Age' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
+export const age = (planet, seconds) => {
+  const secondsToMinutes = seconds / 60;
+  const minutesToHours = secondsToMinutes / 60;
+  const hoursToDays = minutesToHours / 24;
+  const daysToYears = hoursToDays / 365.25;
 
-export const age = () => {
-  throw new Error('Remove this statement and implement this function');
+  return daysToYears;
 };
